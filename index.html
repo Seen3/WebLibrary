@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/864/864685.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <button id="add" >Add book</button>
+  <div id="enter" hidden >
+  <form display="inline" >
+      <button id="close" display="block" type="button">X</button>
+      <br/>
+      Name:<input type="text" id="name"/>
+      Author:<input type="text" id="author"/>
+      Pages:<input type="number" min='0' max='999' id="page"/>
+      Read:<input type="checkbox" id="read"/>
+      <button id="insert" type="button">Add</button>
+  </form>
+</div>
+<table id="tab">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read?</th>
+        <th>Remove</th>
+    </tr>
+</table>
+</body>
+<footer>
+    
+</footer>
+</html>

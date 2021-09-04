@@ -1,0 +1,16 @@
+form{
+    background-color: aqua;
+}
+#enter{
+    width: 13%;
+}
+#close{
+    display: block;
+    float: right;
+}
+table{
+    border: 2px groove gold;
+}
+tr{
+    border: 1px groove silver;
+}
