@@ -18,11 +18,10 @@ function addBook() {
     document.getElementById('read').checked=false;
     //console.log(bk);
     document.getElementById('enter').hidden = true;
-    myLib[i]=(bk);
-    i++;
+    myLib.push(bk);
     addToList(bk);
 }
-let myLib = {};
+let myLib = [];
 function addToList(elem)
 {
     let row=document.createElement('tr');
@@ -48,6 +47,7 @@ function addToList(elem)
         dat4in.addEventListener('click',()=>{
             if (dat4in.innerText=="true")
             {
+                myLib
                 dat4in.innerText="false";
                 dat4in.style.backgroundColor="red";
             }
@@ -63,8 +63,12 @@ function addToList(elem)
         let remin=document.createElement('button');
 
         remin.innerText="Remove";
+        remin.id=`elem${i}`;
         remin.addEventListener('click',()=>{
-            console.log("I will remove things //TODO;")
+            row.parentNode.removeChild(row); 
+            myLib = myLib.filter(function( obj ) {
+                return ((obj.name !== elem.name)&&(obj.author!==elem.author));
+            });
         })
         rem.appendChild(remin);
         row.appendChild(dat4);
