@@ -1,8 +1,9 @@
 form{
     background-color: aqua;
+    position: absolute;
 }
 #enter{
-    width: 13%;
+    width: 5px;
 }
 #close{
     display: block;
@@ -10,7 +11,16 @@ form{
 }
 table{
     border: 2px groove gold;
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 70%;
 }
-tr{
-    border: 1px groove silver;
+button{
+    width:90px;
+    border: 2px groove black;
+    border-radius: 0.2em;
+}
+td{
+    border: 3px groove silver;
+    text-align: center;
 }
